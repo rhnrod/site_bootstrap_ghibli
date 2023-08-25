@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Ghibli - Filmes</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="navbar navbar-expand-lg container">
+            <div id="menu-logo" class="d-flex align-items-end">
+                <img src="imgs/logo.png" width="80px">
+                <h1>GHIBLI FOR FANS <span id="test">お早う。</span></h1>
+            </div>
+
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon navbar-dark"></span>
+            </button>
+
+            <nav class="navbar navbar-collapse justify-content-end" id="menu">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destaque">Filmes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#studioghibli">Studio Ghibli</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Carrosel -->
+    <div class="container carousel-ghibli">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="5000" class="carousel-item active">
+                    <img class="d-block w-100" src="imgs/ghibli__1.jpg">
+                    <div class="carousel-caption d-none d-md-block d-lg-block">
+                        <h2>Assista todos os filmes disponíveis</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="5000" class="carousel-item">
+                    <img class="d-block w-100 h-100" src="imgs/ghibli__2.jpg">
+                    <div class="carousel-caption d-none d-md-block d-lg-block">
+                        <h3>A Viagem de Chihiro (2001 ‧ Fantasia/Aventura ‧ 2h5m)</h3>
+                    </div>
+                </div>
+                <div data-bs-interval="5000" class="carousel-item">
+                    <img class="d-block w-100 h-100" src="imgs/ghibli__3.jpg">
+                    <div class="carousel-caption d-none d-md-block d-lg-block">
+                        <h3>Sussuros do Coração (1995 ‧ Infantil/Romance ‧ 1h51m)</h3>
+                    </div>
+                </div>
+                <div data-bs-interval="5000" class="carousel-item">
+                    <img class="d-block w-100" src="imgs/ghibli__4.jpg">
+                    <div class="carousel-caption d-none d-md-block d-lg-block">
+                        <h3>Meu Amigo Totoro (1988 ‧ Fantasia/Infantil ‧ 1h26m)</h2>
+                    </div>
+                </div>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" class="active" data-bs-target="#carousel-exemplo" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container d-flex justify-content-center">
+        <img src="imgs/chibi.png" width="360px">
+    </div>
+
+    <!-- <div class="container container d-flex justify-content-center my-5">
+        <h4><em><q>Eu gostaria de fazer um filme que dissesse às crianças ‘é bom estar vivo.’</q></em> — Hayao Miyazaki </h4>
+    </div> -->
+
+    <!-- Grid + Cards-->
+    <div class="container">
+        <div class="row">
+            <h4 class="text-center text-uppercase" id="destaque">Recomendações</h4>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card my-3">
+                    <div class="card-header d-flex">
+                        <div class="header-left col-8">
+                            <h5 class="card-title">Meu Amigo Totoro</h5>
+                            <span class="card-subtitle">(となりのトトロ)</span>
+                        </div>
+                        <div class="header-right col-4">
+                            <h6>Hayao Miyazaki</h6>
+                            <p>
+                                Abril 16, 1998<br>
+                                1h26m
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-img">
+                            <img src="imgs/poster__totoro.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center gap-4">
+                        <button type="button" class="fw-bold btn btn-primary">Sinopse</button>
+                        <div class="btn-group">
+                            <button type="button" class="fw-bold btn btn-success">Assistir</button>
+                            <button class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <a href="#">FHD 1280p</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">HD 720p</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">SD 480p</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card my-3">
+                    <div class="card-header d-flex">
+                        <div class="header-left col-8">
+                            <h5 class="card-title">Vidas ao Vento</h5>
+                            <span class="card-subtitle">(風立ちぬ)</span>
+                        </div>
+                        <div class="header-right col-4">
+                            <h6>Hayao Miyazaki</h6>
+                            <p>
+                                Julho 20, 2013<br>
+                                2h06m
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body">
+                        <div class="card-img">
+                            <img src="imgs/poster__thewindrises.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center gap-4">
+                        <button type="button" class="fw-bold btn btn-primary">Sinopse</button>
+                        <div class="btn-group">
+                            <button type="button" class="fw-bold btn btn-success">Assistir</button>
+                            <button class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <a href="#">FHD 1280p</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">HD 720p</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">SD 480p</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card my-3">
+                    <div class="card-header d-flex">
+                        <div class="header-left col-8">
+                            <h5 class="card-title">O Castelo Animado</h5>
+                            <span class="card-subtitle">(ハウルの動く城)</span>
+                        </div>
+                        <div class="header-right col-4">
+                            <h6>Hayao Miyazaki</h6>
+                            <p>
+                                Novembro 20, 2004<br>
+                                1h59m
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <img src="imgs/poster__howlsmovingcastle.png" alt="">
+                    </div>
+                    <div class="card-footer d-flex justify-content-center gap-4">
+                        <button type="button" class="fw-bold btn btn-primary">Sinopse</button>
+                        <div class="btn-group">
+                            <button type="button" class="fw-bold btn btn-success">Assistir</button>
+                            <button class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <a href="#">FHD 1280p</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">HD 720p</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">SD 480p</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-flex justify-content-center">
+        <img src="imgs/chibi2.png" width="980px">
+    </div>
+
+    <div id="presentation" class="container my-3">
+        <div class="row">
+            <h4 class="text-center text-uppercase my-2 mb-5" id="studioghibli">O Studio Ghibli</h4>
+
+            <div class="col-12 col-lg-6 mb-3">
+                <img class="photo" src="imgs/studioghibli__miyazaki-takahata.jpg" alt="Hayao Miyazaki e Isao Takahata">
+            </div>
+            <div class="col-12 col-lg-6 mb-3">
+                <p>
+                    Studio Ghibli Inc. (株式会社スタジオジブリ Kabushiki-gaisha Sutajio Jiburi?) é estúdio de cinema de animação japonês com sede em Koganei, Tóquio .  O estúdio é mais conhecido por seus filmes de animação e também produziu vários curtas, comerciais de televisão e um filme de televisão. Foi fundado em 15 de junho de 1985 pelos diretores Hayao Miyazaki e Isao Takahata e pelo produtor Toshio Suzuki , após o sucesso do filme de anime de Topcraft, Nausicaä do Vale do Vento(1984) e em seguida a compra da Topcraft. O Studio Ghibli também colaborou com os estúdios de videogame no desenvolvimento visual de vários jogos. dentre eles a franquia Ni no Kuni
+    
+                </p>
+                <button type="button" class="btn btn-outline-primary">
+                    <a class="text-decoration-none fw-bold" href="https://pt.wikipedia.org/wiki/Studio_Ghibli">Leia mais</a>
+                </button>
+            </div>
+
+            <h4 class="text-center text-uppercase my-5" id="diretores">Diretores</h4>
+
+    <!-- Miyazaki -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img id="photo" class="rounded-circle object-fit-scale img-fluid" src="imgs/photo__hayao-miyazaki.jpg" alt="Hayao Miyazaki">
+            </div>
+            <div class="col-lg-8 col-md-6 col-sm-12">
+                <div class="container p-5">
+                    <h3 class="h1">Hayao Miyazaki</h3>
+                    <div class="sub d-lg-block d-md-none d-sm-none xsmall">
+                        <h4 class="h6">(宮崎 駿 Miyazaki Hayao, Tóquio, 5 de janeiro de 1941)</h4>
+                        <p>
+                            É um animador, cineasta, roteirista, escritor e artista de mangá japonês. É co-fundador do Studio Ghibli, uma companhia de cinema e animação, tendo conquistado reconhecimento e aclamação internacional pela qualidade de seus vários longas-metragens de animação, os quais ele normalmente escreve e dirige, sendo amplamente considerado como um dos principais nomes da indústria de animação japonesa.
+                        </p>
+                    </div>
+                    <button type="button" class="btn btn-outline-primary">
+                        <a class="text-decoration-none fw-bold" href="https://pt.wikipedia.org/wiki/Hayao_Miyazaki">Wikipedia</a>
+                    </button>
+                    <button type="button" class="btn btn-outline-primary">
+                        <a class="text-decoration-none fw-bold" href="https://studioghibli.com.br/diretores-studioghibli/hayao-miyazaki/">Studio Ghibli Brasil</a>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+ 
+    <!-- Takahata -->
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 order-lg-last order-md-first order-sm-first">
+                <img id="photo2"  class="rounded-circle object-fit-cover" src="imgs/photo__isao_takahata.jpg" alt="Isao Takahata">
+            </div>
+            <div class="col-lg-8 col-md-6 col-sm-12 order-lg-first order-md-last order-sm-last">
+                <div id="presentation" class="container p-5">
+                    <h3 class="h1">Isao Takahata</h3>
+                    <div class="sub d-lg-block d-md-none d-sm-none xsmall">
+                        <h4 class="h6">(高畑 勲 Takahata Isao, Ujiyamada, 29 de outubro de 1935 – Tóquio, 5 de abril de 2018)</h4>
+                        <p>
+                            Foi um diretor, produtor e roteirista japonês, co-fundador do Studio Ghibli junto com seu parceiro de longa data Hayao Miyazaki e os colaboradores Toshio Suzuki e Yasuyoshi Tokuma.
+                        </p>
+                    </div>
+                    <button type="button" class="btn btn-outline-primary">
+                        <a class="text-decoration-none fw-bold" href="https://pt.wikipedia.org/wiki/Isao_Takahata">Wikipedia</a>
+                    </button>
+                    <button type="button" class="btn btn-outline-primary">
+                        <a class="text-decoration-none fw-bold" href="https://studioghibli.com.br/diretores-studioghibli/isao-takahata/">Studio Ghibli Brasil</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="d-flex justify-content-center align-content-center mt-5 ">
+                        <img class="w-50" src="imgs/logo__footer.png">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 p-4">
+                    <h4 id="contato">Contato</h6>
+                    <form>
+                        <label for="news">Assine nossa newsletter</label>
+                        <div class="newsletter d-flex gap-2">
+                            <input id="news" type="email" class="form-control">
+                            <button type="button" class="btn btn-warning">Assinar</button>
+                        </div>
+                    </form>
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a href="#" id="instagram-link" class="nav-link">Instagram</a>    
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" id="twitter-link"class="nav-link">Twitter</a>    
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" id="youtube-link" class="nav-link">Youtube</a>    
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" id="discord-link" class="nav-link">Discord</a>    
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" id="twitch-link" class="nav-link">Twitch</a>    
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+        })
+    </script>
+</body>
+</html>
